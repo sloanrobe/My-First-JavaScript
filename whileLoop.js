@@ -5,7 +5,7 @@ while (n < 11) {
     n++
 }
 
-/* const { input } = require('@inquirer/prompts')
+const { input } = require('@inquirer/prompts')
 
 async function greet() {
     const name = await input({ message: 'Hi! What is your name?' })
@@ -13,9 +13,9 @@ async function greet() {
     console.log(`Hello, ${name}, it's very nice to meet you! Are you ${age} years old?`)
 }
 
-greet() */
+greet()
 
-const { input } = require('@inquirer/prompts')
+/* const { input } = require('@inquirer/prompts')
 
 async function greeting() {
     const name = await input({ message:'Hello, what is your name?' })
@@ -24,11 +24,18 @@ async function greeting() {
 
 greeting('Benji')
 
-let name = 'Benji'
+let name = 'Benji' */
 
-while (name) {
+/* while (name) {
     greeting()
     if (name = 'quit') {
         console.log('We are finished!')
     }
+} */
+
+let y = 0
+
+while (y <= 10) {
+    console.log(y)
+    y++
 }
