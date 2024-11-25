@@ -14,12 +14,22 @@ const products = [{
     quantity: 4
 }]
 
-async function placeOrder() {
+async function showIntro() {
     let intro = "Welcome to The Shop!  Here is a list of products in stock:"
     console.log(intro)
     console.log('-'.repeat(intro.length))
+}
+
+async function showProducts() {
     products.forEach(product => console.log(product))
+}
+
+async function askForInput() {
     const foodOrder = await input({ message: 'What would you like to order from the shop today?'})
+    return foodOrder
+}
+
+async function validateInput(foodOrder) { 
     if (!products.includes(foodOrder)) {
         console.log('The requested product does not exist.')
       } else {
@@ -27,7 +37,14 @@ async function placeOrder() {
         return true
       }
 }
-placeOrder()
+async function startShop() {
+    showIntro()
+    showProducts()
+    const userInput = await askForInput()
+    validateInput(userInput)
+}
+
+startShop()
 
 /* List quantities of items in the store
 Include lowercase functionality
