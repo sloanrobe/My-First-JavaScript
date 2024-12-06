@@ -1,4 +1,4 @@
-/* const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5]
 
 function multiplyNum(num) {
     return num * 3
@@ -7,7 +7,7 @@ function multiplyNum(num) {
 const solution = numbers.map(multiplyNum)
 console.log(solution)
 
-const numbers2 = [1, 2, 3, 4, 5]
+/* const numbers2 = [1, 2, 3, 4, 5]
 
 const solution2 = numbers2.map((num2) => {
     return num2 * 2

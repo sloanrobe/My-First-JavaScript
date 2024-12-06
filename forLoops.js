@@ -9,7 +9,7 @@ for (let r = 100; r > -1; r--) {
 for (let i = 0; i < 10; i++) {
     for (let j = 0; j < 10; j++) {
       console.log(`i:${i}, j:${j}`);
-    }
+    }
   }
 
 for (let p = 12; p <= 21; p++) {

@@ -47,7 +47,7 @@ console.log(sayHelloTo('Joe')); */
 
   console.log(secondGreeting('Benji', 50)) */
 
-let array = ['apple', 'banana', 'orange']
+/* let array = ['apple', 'banana', 'orange']
 
 function solution(input) {
     console.log(input)
@@ -61,4 +61,13 @@ function solution2(input) {
     console.log(input[2])
 }
 
-array2.forEach(solution2)
+array2.forEach(solution2) */
+
+const foods = ['apple', 'banana', 'grape', 'orange']
+console.log(foods)
+
+foods[1] = 'pizza'
+console.log(foods)
+
+foods.push('burgers')
+console.log(foods)

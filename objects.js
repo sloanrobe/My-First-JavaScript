@@ -16,3 +16,15 @@ const house = {
 }
 console.log(house.greet())
 console.log(student.greet())
+
+const person = {
+    name: 'Tova Levy',
+    age: 53,
+    location: 'Barcelona',
+    occupation:  'life coach',
+    greet: function() {
+        return `Hello, I am a ${person.age}-year-old ${person.occupation} who lives in ${person.location}!`
+    }
+}
+
+console.log(person.greet())
