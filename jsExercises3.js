@@ -35,7 +35,7 @@ const persons = [person1, person2, person3]
 function sameInfo() {
     persons.forEach(person => {
         if (person.age == person.address.houseNumber) {
-            console.log(`One person with a matching age and house number is ${person.name}.`)
+            console.log(`We found a match! ${person.name}'s age and house number are the same.`)
         }
     })
   }

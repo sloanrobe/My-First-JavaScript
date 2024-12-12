@@ -1,9 +1,9 @@
 // Draw a Rectangle
 
-/* function drawRectangle (length, width) {
-    for (let i = 0; i < width; i++) {
-        const row = '*'.repeat(length); 
-        console.log(row)
+function drawRectangle (columns, rows) {
+    for (let i = 0; i < rows; i++) {
+        const column = '*'.repeat(columns); 
+        console.log(column)
     }    
 }
-drawRectangle(7, 4) */
+drawRectangle(7, 4)
