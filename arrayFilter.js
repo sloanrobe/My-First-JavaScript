@@ -32,19 +32,3 @@ function moreThan3Ingredients(recipe) {
   
   console.log('longRecipes after change', longRecipes)
   console.log('recipes after change', recipes)
-  
-  const items = [
-    { name: 'computer', price: 850 },
-    { name: 'bike', price: 310 },
-    { name: 'clothes', price: 95 },
-    { name: 'shoes', price: 150 },
-    { name: 'jewelry', price: 638 },
-    { name: 'television', price: 1175 },
-  ]
-
-  function itemsBought(item) {
-    return item.price > 320
-  }
-
-  const newItems = items.filter(itemsBought)
-  console.log(newItems)

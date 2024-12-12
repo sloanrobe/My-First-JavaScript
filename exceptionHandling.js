@@ -22,7 +22,7 @@ async function makeSiteRequest() {
 
 makeSiteRequest() */
 
-const { input } = require('@inquirer/prompts')
+/* const { input } = require('@inquirer/prompts')
 
 async function makeRequest() {
     try {
@@ -36,7 +36,7 @@ async function makeRequest() {
     }   
 }
 
-makeRequest()
+makeRequest() */
 
 /* async function makeRequest() {
         let url = await input({ message: 'Please tell me what site you want to explore:' })
@@ -52,3 +52,20 @@ makeRequest()
 }
 
 makeRequest() */
+
+
+const { input } = require('@inquirer/prompts')
+
+async function makeWebRequest() {
+    try {
+        const url = await input({ message: 'Which URL do you want to use?' })
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log('This is the response: ')
+        console.log(data)
+    } catch (error) {
+        console.log(`Please try a valid URL. An error occurred: ${error.message}.`)
+    }   
+}
+
+makeWebRequest()

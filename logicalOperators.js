@@ -20,4 +20,10 @@ if (summerBreak && temperature >= 31) {
       } else {
         console.log('Complicated')
       }
+
+if (2 + 4 == 7 || 5 > 3) {
+    console.log('That is correct!')
+    } else {
+    console.log('Wrong!')
+}
       
