@@ -1,18 +1,23 @@
 // Find Largest Number in an Array
 
-/* function findLargestNum (array) {
-    return Math.max(array)
+/* const numbers = [4, 8, 7, 2, 9, 375, 23, 6]
+const largestNum = Math.max(...numbers)
+console.log(largestNum) */
+
+// Solve a different way without using .max
+
+const numbers = [6, 3, 17, 24, 5, 42, 13, 10]
+
+function findLargest(numbers) {
+    let largest = numbers[0]
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > largest) {
+            largest = numbers[i]
+        }   
+    }
+    return largest
 }
 
-const numbers = [3, 12, 7, 25, 42, 39]
-const biggestNum = numbers.filter(findLargestNum)
-console.log(biggestNum) */
-
-/* let numbers = [3, 7, 2, 8, 24, 42, 6, 5];
-let max = Math.max(...numbers);
-
-console.log(max); */
-
-const numbers = [4, 8, 7, 2, 9, 375, 23, 6]
-const largestNum = Math.max(...numbers)
+const largestNum = findLargest(numbers)
 console.log(largestNum)
