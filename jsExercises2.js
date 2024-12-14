@@ -18,6 +18,5 @@ function findLargest(numbers) {
     }
     return largest
 }
-
 const largestNum = findLargest(numbers)
 console.log(largestNum)
