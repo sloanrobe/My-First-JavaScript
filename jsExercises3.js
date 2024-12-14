@@ -12,7 +12,7 @@ const person1 = {
   
 const person2 = {
     name: 'Bob',
-    age: 22,
+    age: 40,
     address: {
       city: 'Manchester',
       street: 'Another street',
