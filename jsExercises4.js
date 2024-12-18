@@ -43,5 +43,13 @@ const patients = [
     return medicineCount
   }
 
-mostCommonMed()
-console.log(`The most useful medicine is ${Math.max(mostCommonMed)}.`)
+const solution = mostCommonMed()
+
+const entries = Object.entries(solution)
+console.log(entries)
+const sorted = entries.sort((a, b) => {
+  return b[1] - a[1]
+})
+
+console.log(sorted)
+console.log(`The most useful medicine is ${sorted[0][0]}.`)
