@@ -1,5 +1,3 @@
-// What Medicine to Buy
-
 const patients = [
     {
       name: 'Charlie',
@@ -28,3 +26,19 @@ const patients = [
     },
   ]
   
+  function mostCommonMed() {
+
+    const medicineCount = {}
+
+    patients.forEach(patient => {
+      patient.allowedMedicine.forEach(medicine => {
+        if (medicineCount[medicine]) {
+          medicineCount[medicine]++
+        } else {
+          medicineCount[medicine] = 1
+        }
+      })
+    })
+  }
+
+mostCommonMed()
