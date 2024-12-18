@@ -39,6 +39,8 @@ const patients = [
         }
       })
     })
+    console.log(medicineCount)
+    return medicineCount
   }
 
 mostCommonMed()
