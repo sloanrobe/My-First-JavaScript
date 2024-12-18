@@ -44,3 +44,4 @@ const patients = [
   }
 
 mostCommonMed()
+console.log(`The most useful medicine is ${Math.max(mostCommonMed)}.`)
