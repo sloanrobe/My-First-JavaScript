@@ -34,7 +34,6 @@ products.forEach((product) => {
 })
   
 console.log(productCatalog)
-
   
 /*   {
     Electronics_101: { name: 'Laptop', price: 999, inStock: true, discount: 10 },
