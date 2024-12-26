@@ -71,3 +71,5 @@ console.log(foods)
 
 foods.push('burgers')
 console.log(foods)
+
+const foodsTest1 = ['burger', 'fries', 'rooqchicken']
